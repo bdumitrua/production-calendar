@@ -64,7 +64,7 @@ $calendarForDay = $calendar->getPeriodForDay(new DateTime('2024-01-01'));
 use Shahruslan\ProductionCalendar\Calendar;
 
 $calendar = new Calendar('your-token');
-$period = $calendar->getPeriod('08.01.2024-10.01.2024', region: 23);
+$period = $calendar->getPeriod('07.01.2024-09.01.2024', region: 23);
 print_r($period);
 ```
 Output:
