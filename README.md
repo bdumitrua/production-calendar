@@ -58,13 +58,14 @@ $calendarForDay = $calendar->getPeriodForDay(new DateTime('2024-01-01'));
 - `workDays` – количество рабочих дней в периоде;
 - `weekends` – количество выходных дней в периоде (без учета праздничных);
 - `holidays` – количество праздничных дней в периоде;
+- `shortenedWorkingDays` – количество сокращённых рабочих дней в периоде;
 - `workingHours` – количество рабочего времени за период.
 
 ```php
 use Shahruslan\ProductionCalendar\Calendar;
 
 $calendar = new Calendar('your-token');
-$period = $calendar->getPeriod('08.01.2024-10.01.2024', region: 23);
+$period = $calendar->getPeriod('07.01.2024-09.01.2024', region: 23);
 print_r($period);
 ```
 Output:
@@ -165,6 +166,7 @@ Shahruslan\ProductionCalendar\Entity\Period Object
             [workDays] => 1
             [weekends] => 0
             [holidays] => 2
+            [shortenedWorkingDays] => 0
             [workingHours] => 8
         )
 )

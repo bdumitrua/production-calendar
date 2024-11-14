@@ -15,6 +15,7 @@ final class Statistic
         public readonly int $workDays,
         public readonly int $weekends,
         public readonly int $holidays,
+        public readonly int $shortenedWorkingDays,
         public readonly int $workingHours,
     ) {}
 }

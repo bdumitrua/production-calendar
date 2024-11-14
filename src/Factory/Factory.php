@@ -35,6 +35,7 @@ final class Factory
             $data->statistic->work_days,
             $data->statistic->weekends,
             $data->statistic->holidays,
+            $data->statistic->shortened_working_days,
             $data->statistic->working_hours,
         );
 
