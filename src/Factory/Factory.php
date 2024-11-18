@@ -26,7 +26,8 @@ final class Factory
             $data = new DateTimeImmutable($day->date);
             $type = DayType::from($day->type_text);
             $week = WeekDay::from($day->week_day);
-            return new Day($data, $type, $week, $day->working_hours);
+            $isProject =  (bool) ($day->is_project ?? false);
+            return new Day($data, $type, $week, $day->working_hours, $isProject);
         }, $data->days);
 
         $statistic = new Statistic(
